@@ -1,0 +1,60 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    background: linear-gradient(45deg, #ffcc00, #ff6699, #66ccff, #ccff66);
+    animation: bgColorChange 10s infinite alternate;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal scrolling, but allow vertical scrolling */
+}
+
+@keyframes bgColorChange {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+h1 {
+    color: #000;
+    text-shadow: 4px 4px 0px #ff00ff;
+    transform: rotate(-5deg);
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: rotate(2deg);
+}
+
+.fact {
+    font-size: 1.5em;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    transform: rotate(-3deg);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: rotate(5deg);
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 20px;
+    margin: 10px;
+    transform: rotate(-10deg);
+}
+
+.gallery img:hover {
+    transform: scale(1.2) rotate(10deg);
+    transition: transform 0.3s ease;
+}
